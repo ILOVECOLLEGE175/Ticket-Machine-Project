@@ -25,4 +25,9 @@ How to start this project: Create one or more TicketMachine objects.
 #12 private int count: The initial value of whatever youre inputting to the code. Private student represnatative: Member of a       student class. Private server host: The client that the code is being written on.
 #13 The names are Alive, Tutor, Game.
 #14 Student representative, Person tutor, Server host and Game game.
-#15 
+#15 The code can be changed between eachother aslong as there is only 1 copy of each name.
+#16 yes it is a must to add a semicolon since that declares the statement that you made. 
+#17 int status;
+#18 there is no class
+#19 it has 1 public
+#20 
