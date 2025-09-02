@@ -9,12 +9,12 @@
  * @author David J. Barnes and Michael Kölling
  * @version 7.1
  */
-public TicketMachine
+public class TicketMachine
 {
     // The price of a ticket from this machine.
-    private int price;
-    // The amount of money entered by a customer so far.
     private int balance;
+    // The amount of money entered by a customer so far.
+    private int price;
     // The total amount of money collected by this machine.
     private int total;
 
