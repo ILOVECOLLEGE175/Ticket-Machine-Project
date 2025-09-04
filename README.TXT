@@ -58,6 +58,7 @@ this.score += points;
 {
    this.age=currentAge;
 }
-#35  
-#36
 #37 it reads: "My cat has green eyes"
+
+#39 The actual price of the ticket wont show meaning that rthew word "price will show since you won't be requesting the actual price.
+#40 The # price and cents word will show since they are in quotation marks.
