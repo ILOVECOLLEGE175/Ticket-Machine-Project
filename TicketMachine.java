@@ -12,7 +12,7 @@
 public class TicketMachine
 {
     // The price of a ticket from this machine.
-    private int balance;
+    private int amount;
     // The amount of money entered by a customer so far.
     private int price;
     // The total amount of money collected by this machine.
@@ -24,7 +24,7 @@ public class TicketMachine
     public TicketMachine(int cost)
     {
         price = cost;
-        balance = 0;
+        amount = 0;
         total = 0;
     }
 
@@ -39,9 +39,9 @@ public class TicketMachine
     /**
      * Return The amount of money already inserted for the next ticket.
      */
-    public int getBalance()
+    public int getAmount()
     {
-        return balance;
+        return amount;
     }
 
     /**
@@ -51,7 +51,7 @@ public class TicketMachine
     public void insertMoney(int amount)
     {
         if(amount > 0) {
-            balance = balance + amount;
+            amount = amount + amount;
         }
         else {
             System.out.println("Use a positive amount rather than: " + amount);
@@ -65,7 +65,7 @@ public class TicketMachine
      */
     public void printTicket()
     {
-        if(balance >= price) {
+        if(amount >= price) {
             // Simulate the printing of a ticket.
             System.out.println("##################");
             System.out.println("# The BlueJ Line");
@@ -77,11 +77,11 @@ public class TicketMachine
             // Update the total collected with the price.
             total = total + price;
             // Reduce the balance by the price.
-            balance = balance - price;
+            amount = amount - price;
         }
         else {
             System.out.printf("You must insert at least %d more cents.%n",
-                              price - balance);
+                              price - amount);
         }
     }
 
@@ -92,8 +92,8 @@ public class TicketMachine
     public int refundBalance()
     {
         int amountToRefund;
-        amountToRefund = balance;
-        balance = 0;
+        amountToRefund = amount;
+        amount = 0;
         return amountToRefund;
     }
 }
