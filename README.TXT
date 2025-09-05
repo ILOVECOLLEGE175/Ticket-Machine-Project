@@ -62,3 +62,6 @@ this.score += points;
 
 #39 The actual price of the ticket wont show meaning that rthew word "price will show since you won't be requesting the actual price.
 #40 The # price and cents word will show since they are in quotation marks.
+#42. Once you call the showPrice method to both ticket machines they both send different amounts (their amounts that they cost). It's different since you're calling the method on different machines.
+#44. Once you add the ticket to a fixed price of 1000 cents, once you create a ticket-machine it asks you to name it instead of enterting a value for how much the ticket should cost.
+#46. No it doesn't need any parameters since it has a total state, and it is a mutator because it changes the state instead of getting data/information in any way.
